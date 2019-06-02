@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="434.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FruitJanissary.Home">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="648.0" fitWidth="1046.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLogo" fitHeight="176.0" fitWidth="472.0" layoutX="282.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/logo.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="imgStart" fitHeight="138.0" fitWidth="255.0" layoutX="768.0" layoutY="261.0" onMousePressed="#onImgStartPressed" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../media/start_button.png" />
+      </image>
+   </ImageView>
+
+      <ImageView fx:id="imgHighscore" fitHeight="138.0" fitWidth="255.0" layoutX="50.0" layoutY="261.0" onMousePressed="#onImgStartPressed1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/highscore.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="imgSignup" fitHeight="200" fitWidth="350" layoutX="407.0" layoutY="422.0" onMousePressed="#onImgStartPressed2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/signup.png" />
+         </image>
+      </ImageView>
+
+
+      <ImageView fx:id="imgSound" fitHeight="58.0" fitWidth="45.0" layoutX="31.0" layoutY="577.0" onMousePressed="#onImgSoundPressed" opacity="0.91" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sound_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBlockSound" fitHeight="56.0" fitWidth="51.0" layoutX="28.0" layoutY="574.0" onDragDetected="#onImgBlockSoundPressed" onMousePressed="#onImgBlockSoundPressed" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../media/block_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
