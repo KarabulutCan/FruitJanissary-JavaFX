@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="650.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FruitJanissary.Game">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="648.0" fitWidth="1037.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/background.jpg" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="imgback_button" fitHeight="80" fitWidth="150" layoutX="107.0" layoutY="569.0" onMousePressed="#onImgBackPress" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/back_button.png" />
+         </image>
+      </ImageView>
+
+      <Text fx:id="txtHealth" fill="#ff7400" layoutX="383.0" layoutY="75.0" strokeType="INSIDE" strokeWidth="0.0" text="HEALTH : 3">
+         <font>
+            <Font name="Gang of Three" size="57.0" />
+         </font>
+      </Text>
+
+      <Text fx:id="txtCountupTimer" fill="#ff7400" layoutX="955.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Gang of Three" size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtCuttedFruits" fill="WHITE" layoutX="237.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Gang of Three" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="22.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score">
+         <font>
+            <Font name="Gang of Three" size="30.0" />
+         </font>
+      </Text>
+       <Text fill="RED" layoutX="147.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cutted Fruits">
+           <font>
+               <Font name="Gang of Three" size="30.0" />
+           </font>
+       </Text>
+       <Text fill="RED" layoutX="924.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIMER">
+           <font>
+               <Font name="Gang of Three" size="30.0" />
+           </font>
+       </Text>
+      <Text fx:id="txtScore" fill="#00ff35" layoutX="57.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Gang of Three" size="30.0" />
+         </font>
+      </Text>
+
+      <ImageView fx:id="imagePause" fitHeight="79.0" fitWidth="163.0" layoutX="14.0" layoutY="569.0" onMousePressed="#onImgPausePressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/pause_button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgResume" fitHeight="79.0" fitWidth="163.0" layoutX="25.0" layoutY="569.0" onMousePressed="#omImgResumePressed" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../media/resume_button.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

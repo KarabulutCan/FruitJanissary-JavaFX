@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FruitJanissary.GameOverController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1040.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/end_game.png" />
+         </image>
+      </ImageView>
+      <Text fill="#34f011" layoutX="538.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Score: ">
+         <font>
+            <Font name="Gang of Three" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtScore" fill="#ffc600" layoutX="720.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300">
+         <font>
+            <Font name="Gang of Three" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtBestScore" fill="#ffcc00" layoutX="476.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="438.596672385931">
+         <font>
+            <Font name="Gang of Three" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgReplay" fitHeight="94.0" fitWidth="113.0" layoutX="695.0" layoutY="234.0" onMousePressed="#onImgReplayPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/replay.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBack" fitHeight="88.0" fitWidth="92.0" layoutX="520.0" layoutY="237.0" onMousePressed="#onImgBackPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/back_button.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
