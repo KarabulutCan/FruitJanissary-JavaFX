@@ -1,2 +1,3 @@
 # FruitJanissary-JavaFX
-It's a game like Fruit Ninja with JAVA FX in IntelliJ but more Ottoman than it. :)
+It's a game like Fruit Ninja with JAVA FX in IntelliJ.
+Project Requestor: Asst. Prof. AHMET NUSRET TOPRAK
